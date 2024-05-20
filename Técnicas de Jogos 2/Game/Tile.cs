@@ -1,45 +1,23 @@
-﻿#region File Description
-//-----------------------------------------------------------------------------
-// Tile.cs
-//
-// Microsoft XNA Community Game Platform
-// Copyright (C) Microsoft Corporation. All rights reserved.
-//-----------------------------------------------------------------------------
-#endregion
-
-using System;
+﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Platformer2D
 {
-    /// <summary>
-    /// Controls the collision detection and response behavior of a tile.
-    /// </summary>
+    //criacao dos blocos e atribuição das suas caracteristicas
     enum TileCollision
     {
-        /// <summary>
-        /// A passable tile is one which does not hinder player motion at all.
-        /// </summary>
+        //bloco transparente
         Passable = 0,
 
-        /// <summary>
-        /// An impassable tile is one which does not allow the player to move through
-        /// it at all. It is completely solid.
-        /// </summary>
+        //bloco solido
         Impassable = 1,
 
-        /// <summary>
-        /// A platform tile is one which behaves like a passable tile except when the
-        /// player is above it. A player can jump up through a platform as well as move
-        /// past it to the left and right, but can not fall down through the top of it.
-        /// </summary>
+        //bloco que da para passar em alguns dos seus lados
         Platform = 2,
     }
 
-    /// <summary>
-    /// Stores the appearance and collision behavior of a tile.
-    /// </summary>
+    //guarda o tamanho e as caracteristicas de cada bloco
     struct Tile
     {
         public Texture2D Texture;
@@ -50,9 +28,7 @@ namespace Platformer2D
 
         public static readonly Vector2 Size = new Vector2(Width, Height);
 
-        /// <summary>
-        /// Constructs a new tile.
-        /// </summary>
+        //constroi os blocos no mapa
         public Tile(Texture2D texture, TileCollision collision)
         {
             Texture = texture;

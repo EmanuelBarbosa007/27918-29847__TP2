@@ -4,53 +4,53 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer0_0.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer0_1.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer0_2.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer1_0.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer1_1.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer1_2.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer2_0.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer2_1.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Backgrounds/Layer2_2.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Fonts/Hud.spritefont</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Overlays/you_died.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Overlays/you_lose.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Overlays/you_win.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sounds/ExitReached.wav</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sounds/GemCollected.wav</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sounds/MonsterKilled.wav</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sounds/Music.wma</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sounds/PlayerFall.wav</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sounds/PlayerJump.wav</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sounds/PlayerKilled.wav</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sounds/Powerup.wav</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/Gem.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/MonsterA/Idle.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/MonsterA/Run.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/MonsterB/Idle.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/MonsterB/Run.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/MonsterC/Idle.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/MonsterC/Run.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/MonsterD/Idle.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/MonsterD/Run.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/Player/Celebrate.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/Player/Die.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/Player/Idle.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/Player/Jump.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/Player/Run.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Sprites/VirtualControlArrow.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockA0.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockA1.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockA2.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockA3.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockA4.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockA5.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockA6.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockB0.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/BlockB1.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/Exit.png</File>
-    <File>C:/Users/emanu/Desktop/Técnicas de Jogos 2/Técnicas de Jogos 2/Content/Tiles/Platform.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer0_0.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer0_1.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer0_2.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer1_0.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer1_1.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer1_2.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer2_0.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer2_1.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Backgrounds/Layer2_2.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Fonts/Hud.spritefont</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Overlays/you_died.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Overlays/you_lose.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Overlays/you_win.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sounds/ExitReached.wav</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sounds/GemCollected.wav</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sounds/MonsterKilled.wav</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sounds/Music.wma</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sounds/PlayerFall.wav</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sounds/PlayerJump.wav</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sounds/PlayerKilled.wav</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sounds/Powerup.wav</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/Gem.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/MonsterA/Idle.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/MonsterA/Run.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/MonsterB/Idle.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/MonsterB/Run.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/MonsterC/Idle.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/MonsterC/Run.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/MonsterD/Idle.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/MonsterD/Run.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/Player/Celebrate.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/Player/Die.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/Player/Idle.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/Player/Jump.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/Player/Run.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Sprites/VirtualControlArrow.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockA0.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockA1.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockA2.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockA3.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockA4.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockA5.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockA6.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockB0.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/BlockB1.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/Exit.png</File>
+    <File>C:/Users/emanu/Desktop/Técnicas_de_Jogos_2/Técnicas de Jogos 2/Content/Tiles/Platform.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

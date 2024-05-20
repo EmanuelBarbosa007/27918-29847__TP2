@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Técnicas de Jogos 2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25006f0a1d16bb06c08c627d38476df0d6c824e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Técnicas de Jogos 2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Técnicas de Jogos 2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

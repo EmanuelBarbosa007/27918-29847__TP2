@@ -9,40 +9,36 @@ using Microsoft.Xna.Framework.Content;
 
 namespace Platformer2D
 {
-    /// <summary>
-    /// This is the main type for your game
-    /// </summary>
+    // classe responsavel por executar o jogo
+    
     public class PlatformerGame : Microsoft.Xna.Framework.Game
     {
-        // Resources for drawing.
+        // carrega graficos e tamanho da janela
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
         Vector2 baseScreenSize = new Vector2(800, 480);
         private Matrix globalTransformation;
         int backbufferWidth, backbufferHeight;
 
-        // Global content.
+        // carregar conteudo
         private SpriteFont hudFont;
 
         private Texture2D winOverlay;
         private Texture2D loseOverlay;
         private Texture2D diedOverlay;
 
-        // Meta-level game state.
+        //estado do jogo
         private int levelIndex = -1;
         private Level level;
         private bool wasContinuePressed;
 
-        // When the time remaining is less than the warning time, it blinks on the hud
+        // o tempo pisca quando falta menos de 30 segundos
         private static readonly TimeSpan WarningTime = TimeSpan.FromSeconds(30);
 
-        // We store our input states so that we only poll once per frame, 
-        // then we use the same input state wherever needed
+        //carrega teclado
         private KeyboardState keyboardState;
-        // The number of levels in the Levels directory of our content. We assume that
-        // levels in our content are 0-based and that all numbers under this constant
-        // have a level file present. This allows us to not need to check for the file
-        // or handle exceptions, both of which can add unnecessary time to level loading.
+        
+        //carrega o numero de niveis
         private const int numberOfLevels = 3;
 
         public PlatformerGame()
@@ -51,27 +47,20 @@ namespace Platformer2D
 
             graphics.IsFullScreen = false;
 
-            //graphics.PreferredBackBufferWidth = 800;
-            //graphics.PreferredBackBufferHeight = 480;
+            //carrega a janela do jogo
             graphics.SupportedOrientations = DisplayOrientation.LandscapeLeft | DisplayOrientation.LandscapeRight;
 
         }
 
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
+        //carrega os conteudos do jogo 
         protected override void LoadContent()
         {
             this.Content.RootDirectory = "Content";
 
-            // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // Load fonts
             hudFont = Content.Load<SpriteFont>("Fonts/Hud");
 
-            // Load overlay textures
             winOverlay = Content.Load<Texture2D>("Overlays/you_win");
             loseOverlay = Content.Load<Texture2D>("Overlays/you_lose");
             diedOverlay = Content.Load<Texture2D>("Overlays/you_died");
@@ -83,7 +72,7 @@ namespace Platformer2D
 
         public void ScalePresentationArea()
         {
-            //Work out how much we need to scale our graphics to fill the screen
+            //define o tamanho da janela
             backbufferWidth = GraphicsDevice.PresentationParameters.BackBufferWidth;
             backbufferHeight = GraphicsDevice.PresentationParameters.BackBufferHeight;
             float horScaling = backbufferWidth / baseScreenSize.X;
@@ -94,23 +83,19 @@ namespace Platformer2D
         }
 
 
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        //atualiza o jogo e define quando faz falta executar os conteudos
         protected override void Update(GameTime gameTime)
         {
-            //Confirm the screen has not been resized by the user
+           //confirma o tamanho da janela
             if (backbufferHeight != GraphicsDevice.PresentationParameters.BackBufferHeight ||
                 backbufferWidth != GraphicsDevice.PresentationParameters.BackBufferWidth)
             {
                 ScalePresentationArea();
             }
-            // Handle polling for our input and handling high-level input
+
             HandleInput(gameTime);
 
-            // update our level, passing down the GameTime along with all of our input states
+            //atualiza o nivel, recebendo o tempo e as configuracoes do teclado
             level.Update(gameTime, keyboardState, Window.CurrentOrientation);
 
             if (level.Player.Velocity != Vector2.Zero)
@@ -120,14 +105,13 @@ namespace Platformer2D
 
         private void HandleInput(GameTime gameTime)
         {
-            // get all of our input states
+            //recebe os sinais do teclado
             keyboardState = Keyboard.GetState();
 
             bool continuePressed =
                 keyboardState.IsKeyDown(Keys.Space);
 
-            // Perform the appropriate action to advance the game and
-            // to get the player back to playing.
+            //deteta se o jogador esta vivo e se nao estiver permite voltar ao jogo
             if (!wasContinuePressed && continuePressed)
             {
                 if (!level.Player.IsAlive)
@@ -149,14 +133,14 @@ namespace Platformer2D
 
         private void LoadNextLevel()
         {
-            // move to the next level
+            //muda para o nivel seguinte
             levelIndex = (levelIndex + 1) % numberOfLevels;
 
-            // Unloads the content for the current level before loading the next one.
+
             if (level != null)
                 level.Dispose();
 
-            // Load the level.
+            // carrega o nivel do ficheiro
             string levelPath = string.Format("Content/Levels/{0}.txt", levelIndex);
             using (Stream fileStream = TitleContainer.OpenStream(levelPath))
                 level = new Level(Services, fileStream, levelIndex);
@@ -168,10 +152,7 @@ namespace Platformer2D
             LoadNextLevel();
         }
 
-        /// <summary>
-        /// Draws the game from background to foreground.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        //desenha o fundo dos niveis
         protected override void Draw(GameTime gameTime)
         {
             graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
@@ -188,13 +169,10 @@ namespace Platformer2D
             spriteBatch.Begin();
             Rectangle titleSafeArea = GraphicsDevice.Viewport.TitleSafeArea;
             Vector2 hudLocation = new Vector2(titleSafeArea.X, titleSafeArea.Y);
-            //Vector2 center = new Vector2(titleSafeArea.X + titleSafeArea.Width / 2.0f,
-            //                             titleSafeArea.Y + titleSafeArea.Height / 2.0f);
 
             Vector2 center = new Vector2(baseScreenSize.X / 2, baseScreenSize.Y / 2);
 
-            // Draw time remaining. Uses modulo division to cause blinking when the
-            // player is running out of time.
+            // indicador de tempo
             string timeString = "TIME: " + level.TimeRemaining.Minutes.ToString("00") + ":" + level.TimeRemaining.Seconds.ToString("00");
             Color timeColor;
             if (level.TimeRemaining > WarningTime ||
@@ -209,11 +187,11 @@ namespace Platformer2D
             }
             DrawShadowedString(hudFont, timeString, hudLocation, timeColor);
 
-            // Draw score
+            // coloca a pontuação
             float timeHeight = hudFont.MeasureString(timeString).Y;
             DrawShadowedString(hudFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.Yellow);
 
-            // Determine the status overlay message to show.
+            // determina se atela que aparece é a tela de vitoria, derrota ou morte
             Texture2D status = null;
             if (level.TimeRemaining == TimeSpan.Zero)
             {
@@ -233,7 +211,6 @@ namespace Platformer2D
 
             if (status != null)
             {
-                // Draw status message.
                 Vector2 statusSize = new Vector2(status.Width, status.Height);
                 spriteBatch.Draw(status, center - statusSize / 2, Color.White);
             }

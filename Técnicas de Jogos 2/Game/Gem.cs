@@ -1,22 +1,11 @@
-﻿#region File Description
-//-----------------------------------------------------------------------------
-// Gem.cs
-//
-// Microsoft XNA Community Game Platform
-// Copyright (C) Microsoft Corporation. All rights reserved.
-//-----------------------------------------------------------------------------
-#endregion
-
-using System;
+﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 
 namespace Platformer2D
 {
-    /// <summary>
-    /// A valuable item the player can collect.
-    /// </summary>
+    //funcao responsavel pela criacao das gemas
     class Gem
     {
         private Texture2D texture;
@@ -27,7 +16,6 @@ namespace Platformer2D
         public bool IsPowerUp { get; private set; }
         public readonly Color Color;
 
-        // The gem is animated from a base position along the Y axis.
         private Vector2 basePosition;
         
 
@@ -37,9 +25,7 @@ namespace Platformer2D
         }
         Level level;
 
-        /// <summary>
-        /// Gets the current position of this gem in world space.
-        /// </summary>
+        //deteta a posicao das gemas no mapa
         public Vector2 Position
         {
             get
@@ -48,9 +34,7 @@ namespace Platformer2D
             }
         }
 
-        /// <summary>
-        /// Gets a circle which bounds this gem in world space.
-        /// </summary>
+        //cria uma area de colisao para as gemas
         public Circle BoundingCircle
         {
             get
@@ -59,9 +43,7 @@ namespace Platformer2D
             }
         }
 
-        /// <summary>
-        /// Constructs a new gem.
-        /// </summary>
+        //coloca as gemas no mapa
         public Gem(Level level, Vector2 position, bool isPowerUp)
         {
             this.level = level;
@@ -74,15 +56,13 @@ namespace Platformer2D
             }
             else
             {
-                PointValue = 30;
+                PointValue = 50;
                 Color = Color.Yellow;
             }
             LoadContent();
         }
 
-        /// <summary>
-        /// Loads the gem texture and collected sound.
-        /// </summary>
+        //carrega a textura das gemas e o seu som
         public void LoadContent()
         {
             texture = Level.Content.Load<Texture2D>("Sprites/Gem");
@@ -92,13 +72,7 @@ namespace Platformer2D
 
         
 
-        /// <summary>
-        /// Called when this gem has been collected by a player and removed from the level.
-        /// </summary>
-        /// <param name="collectedBy">
-        /// The player who collected this gem. Although currently not used, this parameter would be
-        /// useful for creating special power-up gems. For example, a gem could make the player invincible.
-        /// </param>
+        /// deteta se a gema foi apanhada e se esta era uma gema normal ou um power up
         public void OnCollected(Player collectedBy)
         {
             collectedSound.Play();
@@ -106,9 +80,7 @@ namespace Platformer2D
                 collectedBy.PowerUp();
         }
 
-        /// <summary>
-        /// Draws a gem in the appropriate color.
-        /// </summary>
+        ///desenha as gemas com a sua respetiva cor
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, Position, null, Color, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);

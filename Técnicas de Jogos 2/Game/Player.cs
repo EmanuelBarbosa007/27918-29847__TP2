@@ -6,12 +6,8 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Platformer2D
 {
-    /// <summary>
-    /// Our fearless adventurer!
-    /// </summary>
     class Player
     {
-        // Animations
         private Animation idleAnimation;
         private Animation runAnimation;
         private Animation jumpAnimation;
@@ -20,7 +16,6 @@ namespace Platformer2D
         private SpriteEffects flip = SpriteEffects.None;
         private AnimationPlayer sprite;
 
-        // Sounds
         private SoundEffect killedSound;
         private SoundEffect jumpSound;
         private SoundEffect fallSound;

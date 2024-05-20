@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emanu\\Desktop\\Técnicas de Jogos 2\\Técnicas de Jogos 2\\Técnicas de Jogos 2.csproj": {}
+    "C:\\Users\\emanu\\Desktop\\Técnicas_de_Jogos_2\\Técnicas de Jogos 2\\Técnicas de Jogos 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emanu\\Desktop\\Técnicas de Jogos 2\\Técnicas de Jogos 2\\Técnicas de Jogos 2.csproj": {
+    "C:\\Users\\emanu\\Desktop\\Técnicas_de_Jogos_2\\Técnicas de Jogos 2\\Técnicas de Jogos 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emanu\\Desktop\\Técnicas de Jogos 2\\Técnicas de Jogos 2\\Técnicas de Jogos 2.csproj",
+        "projectUniqueName": "C:\\Users\\emanu\\Desktop\\Técnicas_de_Jogos_2\\Técnicas de Jogos 2\\Técnicas de Jogos 2.csproj",
         "projectName": "Técnicas de Jogos 2",
-        "projectPath": "C:\\Users\\emanu\\Desktop\\Técnicas de Jogos 2\\Técnicas de Jogos 2\\Técnicas de Jogos 2.csproj",
+        "projectPath": "C:\\Users\\emanu\\Desktop\\Técnicas_de_Jogos_2\\Técnicas de Jogos 2\\Técnicas de Jogos 2.csproj",
         "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emanu\\Desktop\\Técnicas de Jogos 2\\Técnicas de Jogos 2\\obj\\",
+        "outputPath": "C:\\Users\\emanu\\Desktop\\Técnicas_de_Jogos_2\\Técnicas de Jogos 2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config",

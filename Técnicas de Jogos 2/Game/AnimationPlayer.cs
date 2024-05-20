@@ -1,72 +1,49 @@
-﻿#region File Description
-//-----------------------------------------------------------------------------
-// AnimationPlayer.cs
-//
-// Microsoft XNA Community Game Platform
-// Copyright (C) Microsoft Corporation. All rights reserved.
-//-----------------------------------------------------------------------------
-#endregion
-
+﻿
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Platformer2D
 {
-    /// <summary>
-    /// Controls playback of an Animation.
-    /// </summary>
+    //cria as animacoes do jogador
     struct AnimationPlayer
     {
-        /// <summary>
-        /// Gets the animation which is currently playing.
-        /// </summary>
+        //recebe a animaçao a executar
         public Animation Animation
         {
             get { return animation; }
         }
         Animation animation;
 
-        /// <summary>
-        /// Gets the index of the current frame in the animation.
-        /// </summary>
         public int FrameIndex
         {
             get { return frameIndex; }
         }
         int frameIndex;
 
-        /// <summary>
-        /// The amount of time in seconds that the current frame has been shown for.
-        /// </summary>
+        //recebe o tempo que a animaçao deve durar
         private float time;
 
-        /// <summary>
-        /// Gets a texture origin at the bottom center of each frame.
-        /// </summary>
+        //recebe as texturas para as animacoes
         public Vector2 Origin
         {
             get { return new Vector2(Animation.FrameWidth / 2.0f, Animation.FrameHeight); }
         }
 
-        /// <summary>
-        /// Begins or continues playback of an animation.
-        /// </summary>
+        //inicia ou continua a animacao
         public void PlayAnimation(Animation animation)
         {
-            // If this animation is already running, do not restart it.
+            //deteta se a animacao já comecou para nao a reniciar
             if (Animation == animation)
                 return;
 
-            // Start the new animation.
+            // comeca a animaçao
             this.animation = animation;
             this.frameIndex = 0;
             this.time = 0.0f;
         }
 
-        /// <summary>
-        /// Advances the time position and draws the current frame of the animation.
-        /// </summary>
+        //desenha os frames conforme o tempo
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch, Vector2 position, SpriteEffects spriteEffects, Color color)
         {
             if (Animation == null)
@@ -78,7 +55,7 @@ namespace Platformer2D
             {
                 time -= Animation.FrameTime;
 
-                // Advance the frame index; looping or clamping as appropriate.
+
                 if (Animation.IsLooping)
                 {
                     frameIndex = (frameIndex + 1) % Animation.FrameCount;
@@ -89,10 +66,10 @@ namespace Platformer2D
                 }
             }
 
-            // Calculate the source rectangle of the current frame.
+            // calcula o retangulo de colisao para a animaçao
             Rectangle source = new Rectangle(FrameIndex * Animation.Texture.Height, 0, Animation.Texture.Height, Animation.Texture.Height);
 
-            // Draw the current frame.
+            // desenha o frame atual
             spriteBatch.Draw(Animation.Texture, position, source, color, 0.0f, Origin, 1.0f, spriteEffects, 0.0f);
         }
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch, Vector2 position, SpriteEffects spriteEffects)
