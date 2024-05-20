@@ -1,1 +1,45 @@
-jogo
+-Emanuel Barbosa 29847;
+-José Abreu 27918.
+
+Introdução: No ambito da disciplina de Técnicas de Desenvolvimento de Vídeojogos, vimos apresentar o jogo que criamos a pedido do professor, explorando as pastas e ficheiros do jogo para perceber o jogo e como este funciona .
+
+Funcionalidades do Jogo: 
+- Recolha de gemas;
+- Personagens e inimigos com animações para várias ações;
+- Controlo de personagem com teclas do teclado; 
+- Inimigos que se movimentam de forma autónoma;
+- Pontuação que cresce conforme a recolha de gemas e por conclusão de nivel;
+- Cronómetro que indica quanto tempo o jogador tem para concluir os niveis;
+- Mapas com obstáculos para dificultar a vitória do jogador.
+-Camara que se movimenta conforme o personagem avança ou recua no nivel;
+-Power ups que permitem ao jogador tornar se invencivel por alguns segundos e capaz de matar qualquer inimigo em que toque enquanto estiver nesta forma.
+
+Controlos: 
+Tecla A: andar para esquerda; Tecla D: andar para direita; Tecla Espaço: Saltar.
+
+Pastas:
+.config
+bin
+Content
+Game
+obj
+
+Ficheiros:
+Program.cs
+Game1
+Técnicas de Jogos 2.csproj
+
+
+A pasta ".config" contem ficheiros JSON que são utilizados para a troca de dados de forma rápida e simples entre ficheiros.
+
+ As pastas "bin" e "obj" possuem ficheiros essenciais para a execuxão do programa, pois estas possuem bibliotecas,arquivos e arquivos de execuxão.
+
+ A pasta "content" é responsável por armazenar os “gráficos” do jogo, armazenando os personagens, os blocos, os mapas, os audios, etc
+
+ A pasta “Game” é responsável por armazenar os códigos respetivos a tudo o que acontece no jogo, desde o movimento do personagem e a constituição dos níveis até à recolha de gemas e power-ups e mobilização dos inimigos.
+
+O ficheiro "Game1" serve como a “main” do programa, sendo este o programa responsável por indicar como o jogo tem que ser executado, informando o sistema como e quando este deve usar códigos responsáveis por cada ação do jogo.
+
+Os ficheiros "Program.cs" e "Técnicas de Jogos 2.csproj" sao responsaveis por executar e iniciar o jogo.
+
+Em suma o nosso jogo é um jogo esteticamente simples mas consideramo-lo um jogo bem feito e que é um bom jogo para quem quiser passar o tempo e se divertir um bocado.
