@@ -38,6 +38,38 @@ A pasta ".config" contem ficheiros JSON que são utilizados para a troca de dado
 
  A pasta “Game” é responsável por armazenar os códigos respetivos a tudo o que acontece no jogo, desde o movimento do personagem e a constituição dos níveis até à recolha de gemas e power-ups e mobilização dos inimigos.
 
+ Programa Animation:
+   O programa Animation procura os frames que serão utilizados para as animações do jogo e converte-os nas respetivas animações.
+
+ Programa AnimationPlayer:
+   O programa AnimationPlayer é responsável por obter as animações respetivas ao jogador  obtidas pelo “Animation” e exibe-as quando estas forem necessárias.
+
+ Programa Cirle:
+   Este código é responsável por criar circulos ao longo do mapa e detetta se estes se intercetarem com algum retângulo, tendo o propósito de detetar colisões e evitá-las.
+
+ Programa Enemy:
+   Este programa tem como objetivo criar e colocar os inimigos no mapa, sendo responsável pela sua criação, movimentos,animações, sons, e  verifica se o inimigo está vivo ou morto, e se pode andar mais para a frente, e se não este vira para o outro lado.
+
+  Programa Gem:
+   O programa Gem é responsável pela criação das gemas e dos power-ups no mapa e removê las quando recolhidas, dando-lhes uma textura, cor, pontuação por cada gema recolhida, animações e sons.
+
+  Programa Layer:
+   O programa Layer tem como função determinar a posição do jogador no mapa e desenhar o background e por este a andar conforme o jogador anda.
+
+  Programa Level:
+   O prgrama Level tem como principal objetivo a criação do mapa, lendo os ficheiros de texto guardados na pasta Content e transformando cada elemento na sua respetiva representação, e cria também as fronteiras do mapa e evita qualquer tipo de colisões.
+
+  Programa Player:
+   Este programa é responsável por a criação e todas as ações do jogador, criando o seu personagem, aplicando-lhe  físicas, velocidades para as suas ações, animações, sons, vidas e habilidade de renascer, morte caso seja atacado, habilidade dos power-ups e evita que este atravesse obstáculos.
+
+  Programa RectangleExtensions:
+   O programa RectangleExtensions cria retângulos para todos os objetos que se encontram no mapa e verifica se estes colidem ou não.
+
+  Programa Tile:
+    O programa Tile é responsável por distinguir as colisões de cada bloco, se um bloco é completamente sólido, se é completamente transparente ou se é transparente em alguns lados e noutros é sólido, e em seguida criar os blocos conforme as suas colisões.
+
+
+
 O ficheiro "Game1" serve como a “main” do programa, sendo este o programa responsável por indicar como o jogo tem que ser executado, informando o sistema como e quando este deve usar códigos responsáveis por cada ação do jogo.
 
 Os ficheiros "Program.cs" e "Técnicas de Jogos 2.csproj" sao responsaveis por executar e iniciar o jogo.
